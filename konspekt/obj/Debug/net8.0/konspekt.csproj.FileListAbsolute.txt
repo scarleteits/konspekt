@@ -1,0 +1,15 @@
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\bin\Debug\net8.0\konspekt.exe
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\bin\Debug\net8.0\konspekt.deps.json
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\bin\Debug\net8.0\konspekt.runtimeconfig.json
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\bin\Debug\net8.0\konspekt.dll
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\bin\Debug\net8.0\konspekt.pdb
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.AssemblyInfo.cs
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.sourcelink.json
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.dll
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\refint\konspekt.dll
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.pdb
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\konspekt.genruntimeconfig.cache
+C:\Users\opilane\source\repos\scarlet eits\IKTpe25_1\konspekt\obj\Debug\net8.0\ref\konspekt.dll
