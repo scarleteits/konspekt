@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel;
+using System.Threading.Channels;
 
 Console.WriteLine("Hello, World!");
 
@@ -157,4 +158,105 @@ else if (favColor == "helesinine")
     Console.WriteLine("Kahjuks ei ole helesinine saadaval");
 }
 
+//# Kolja kalkulaator - Kirjuta programm mis:
+//#  - Küsib kasutajalt kas ta tahab ära mõõta papkasti või õlitünni.
+Console.WriteLine("Kas tahad mõõta ära kasti või tünni?");
+string valik = Console.ReadLine();
+//#    - olenevalt kasutaja sisestusest küsib ta:
+if (valik == "tünn")
+{
+    //#   - - tünni jaoks:
+    //#   - - - kas kasutaja teab põhja raadiust (r) või põhja läbimõõtu (d):
+    Console.WriteLine("Kas sa tead tünni raadiust (r) või põhja läbimõõtu (d)");
+    string rvõid = Console.ReadLine();
+    Console.WriteLine("Sisesta see mõõt:");
+    double mõõt = double.Parse(Console.ReadLine());
+    if (rvõid == "d")
+    {
+        mõõt = mõõt / 2;
+    }
+    else if (rvõid != "r")
+    {
+        Console.WriteLine("Sisend ei ole tuntav");
+    }
 
+    //#   - - - tünni kõrgust
+    Console.WriteLine("Kui kõrge on su tünn");
+    int kõrgus = int.Parse(Console.ReadLine());
+
+    //#    - - - kaane paksus (kaane paksus võtab tünni kõrgusest maha, kuna kaan võtab tünni sisust natuke ruumi)
+    Console.WriteLine("kui paks on tünni kaas?");
+    int kaanepaksus = int.Parse(Console.ReadLine());
+
+    //#     - - - Arvutab tünni ruumala mahu, tünni küljepindala, tünni kogupindala
+    double tünnipõhiS = Math.PI * (mõõt * mõõt);
+    double mahtV = tünnipõhiS * (kõrgus - kaanepaksus);
+    double küljepindala = tünnipõhiS * kõrgus;
+    double kogupindala = (tünnipõhiS * 2) + küljepindala;
+    Console.WriteLine($"Sinu tünn mahutab {mahtV} \nTünni küljepindala on {küljepindala} \nKogupindala aga on{kogupindala}");
+}
+//#   - - kasti jaoks:
+else if (valik == "kast")
+{
+    //#     - - - Kas kast on kuubiku kujuline või risttahuka kujuline
+    Console.WriteLine("Kas su kast on kuubik (k) või risttahukas (r)? ");
+    string kastitüüp = Console.ReadLine();
+    if (kastitüüp == "k")
+    {
+        //#    - - - - kui on kuubik, siis küsib kasutajalt ainult küljepikkust
+        Console.WriteLine("Sisesta kasti küljepikkus:");
+        double külgA = double.Parse(Console.ReadLine());
+        double kuubik = Math.Pow(külgA, 3);
+        double küljepindala = (külgA * külgA) * 6;
+        double diagonaal = külgA * Math.Sqrt(3);
+        Console.WriteLine($"Sinu kuubik mahutab {kuubik} \nKuubiku küljepindala on {küljepindala} \nDiagonaal aga on {diagonaal}");
+    }
+    //#   - - - - kui on risttahukas siis küsib kasutajalt:
+    else if (kastitüüp == "r")
+    {
+        //#    - - - - - pikima külje pikkust,
+        Console.WriteLine("Mis on sinu kasti kõige pikim külg?:");
+        double pikkkülg = double.Parse(Console.ReadLine());
+        //#    - - - - - lühima külje pikkust ja 
+        Console.WriteLine("Mis on sinu kasti kõige lühim külg?:");
+        double lühikekülg = double.Parse(Console.ReadLine());
+        //#    - - - - - kasti kõrgus
+        Console.WriteLine("Mis on sinu kasti kõrgus?:");
+        double kõrgus = double.Parse(Console.ReadLine());
+
+        //#  - - arvutab vastavalt kasti kogupindala, mahu, ja pikima läbiva joone (d)
+        double V = pikkkülg * lühikekülg * kõrgus;
+        double kogupindala = 2 * ((pikkkülg * lühikekülg) + (lühikekülg * kõrgus) + (pikkkülg * kõrgus));
+        double diagonaal = Math.Sqrt((pikkkülg * pikkkülg) + (lühikekülg * lühikekülg) + (kõrgus * kõrgus));
+        Console.WriteLine($"Sinu kast mahutab {V} \nKasti küljepindala on {kogupindala} \nDiagonaal aga on {diagonaal}")
+    }
+    
+}
+
+Console.WriteLine("banana");
+// Console -> adresseritav moodul või objekt (Roheline)
+// . -> midagi selle objekti seest, sarnane windowsi kausta pathis olev slashiga
+// WriteLine -> adresseritav funktsioon objektist Console
+// () -> sulupaar mis omab endas funktsioonile vajalikku infot
+//      - saab kasutada ka if tingimuslauses oleva tingimuse piiramiseks, ehk teisisõnu "ifi parameeter"
+// [] -> tähistab massiive
+// {} -> koodiplokk, tavaliselt pärast tingimust või funktsiooni kirjeldust.
+//     - saab ka kasutada teksti sees muutujate kuvamiseks
+// -> taane aitab arendajal aru saada millise koodiploki sees, miski on. Vajalik ka kompilaatorile.
+// "banana" -> parameeter mis antakse funktsioonile WriteLine töötlemiseks kaasa.
+// ; -> iga koodlause lõppeb komakooloniga
+
+int muutuja = 3;
+// int ->  muutuja nime ess olev andmetüübi kirjeldus. See näitab ära mistüüpi andmed selle muutuja sees on
+// = -> võrdusmärk omistab sellele muutujale mingisuguse väärtuse
+// 3 -> väärtus mis sellele muutujale omistatakse
+
+//võimalikud andmetüübid:
+int a = 1; // täisarv
+decimal b = 2.0M; // kümnendsüsteemis olev komakohaga arv
+float c = 3.0f // kümnendsüsteemis olev ujukomaga arv
+double d = 4.0d // kümnendsüsteemis olev komakohaga arv, sarnane decimaliga
+char c1 = 'a'; // üksainus täht või tähemärk
+string s = "tekst"; // inimloetaval kujul tekst
+var x = "abc"; // ebamäärase tüübiga kohaliku muutuja.
+const int z = 3; // konstant-tüüpi muutujaid ei saa muuta, need on read-only
