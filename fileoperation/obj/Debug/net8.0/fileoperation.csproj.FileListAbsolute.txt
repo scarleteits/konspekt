@@ -1,0 +1,14 @@
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.AssemblyInfo.cs
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\Scarlet\fileoperation\bin\Debug\net8.0\fileoperation.exe
+C:\Users\opilane\source\repos\Scarlet\fileoperation\bin\Debug\net8.0\fileoperation.deps.json
+C:\Users\opilane\source\repos\Scarlet\fileoperation\bin\Debug\net8.0\fileoperation.runtimeconfig.json
+C:\Users\opilane\source\repos\Scarlet\fileoperation\bin\Debug\net8.0\fileoperation.dll
+C:\Users\opilane\source\repos\Scarlet\fileoperation\bin\Debug\net8.0\fileoperation.pdb
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.dll
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\refint\fileoperation.dll
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.pdb
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\fileoperation.genruntimeconfig.cache
+C:\Users\opilane\source\repos\Scarlet\fileoperation\obj\Debug\net8.0\ref\fileoperation.dll
